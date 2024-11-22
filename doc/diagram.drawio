@@ -1,0 +1,307 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram id="GaI_gfqjV_KCcYTyMjwc" name="Page-1">
+    <mxGraphModel dx="2074" dy="1152" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="NGINX" style="whiteSpace=wrap;html=1;perimeterSpacing=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="40" width="120" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="8" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="/register" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#3399FF;spacingTop=0;spacing=0;spacingRight=7;spacingLeft=4;fontFamily=Courier New;spacingBottom=4;" parent="8" vertex="1" connectable="0">
+          <mxGeometry x="0.3037" y="2" relative="1" as="geometry">
+            <mxPoint x="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="69" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.503;entryY=0.071;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Courier New;fontSize=10;fontColor=#FFFFFF;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="3" target="68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Auth&lt;br&gt;service" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="70" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.503;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Courier New;fontSize=10;fontColor=#FFFFFF;startArrow=none;startFill=0;endArrow=classic;endFill=1;" parent="1" source="4" target="68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Mock&lt;br&gt;service" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="790" y="140" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="" style="endArrow=none;dashed=1;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=27.5;exitPerimeter=0;" parent="1" source="5" target="3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="120" as="sourcePoint" />
+            <mxPoint x="620" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" value="" style="endArrow=none;dashed=1;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;" parent="1" source="5" target="4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="157.5" as="sourcePoint" />
+            <mxPoint x="650" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="79.62" as="sourcePoint" />
+            <mxPoint x="360" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="/authorize" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#3399FF;spacingTop=0;spacing=4;spacingRight=7;spacingLeft=4;fontFamily=Courier New;" parent="10" vertex="1" connectable="0">
+          <mxGeometry x="0.1315" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1.017;entryY=0.214;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="557.96" y="290.08000000000004" as="sourcePoint" />
+            <mxPoint x="359.99999999999994" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="/data" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#3399FF;spacingTop=0;spacing=4;spacingRight=7;spacingLeft=4;fontFamily=Courier New;" parent="13" vertex="1" connectable="0">
+          <mxGeometry x="0.1315" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1.017;entryY=0.214;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="557.96" y="320.0799999999999" as="sourcePoint" />
+            <mxPoint x="360" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="/list" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#3399FF;spacingTop=0;spacing=4;spacingRight=7;spacingLeft=4;fontFamily=Courier New;" parent="15" vertex="1" connectable="0">
+          <mxGeometry x="0.1315" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="API" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;fontFamily=Courier New;fontColor=#ffffff;html=0;fillColor=#3333FF;strokeColor=default;swimlaneFillColor=default;strokeWidth=1;swimlaneLine=0;rounded=0;shadow=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="370" width="1050" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="31" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="30" width="1050" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="Запрос" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#66B2FF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#ffffff;fontSize=13;fontStyle=1;strokeColor=none;spacing=0;strokeWidth=0;" parent="31" vertex="1">
+          <mxGeometry width="130" height="40" as="geometry">
+            <mxRectangle width="130" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" value="Доступ через JWT токен" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#66B2FF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#ffffff;fontSize=13;fontStyle=1;strokeColor=none;spacing=0;strokeWidth=0;" parent="31" vertex="1">
+          <mxGeometry x="130" width="110" height="40" as="geometry">
+            <mxRectangle width="110" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="33" value="Тело запроса" style="shape=partialRectangle;connectable=0;fillColor=#66B2FF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#ffffff;fontSize=13;align=center;spacingLeft=0;spacingBottom=0;spacingTop=0;fontStyle=1;strokeColor=none;spacing=0;strokeWidth=0;" parent="31" vertex="1">
+          <mxGeometry x="240" width="170" height="40" as="geometry">
+            <mxRectangle width="170" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34" value="Описание" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#66B2FF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#ffffff;fontSize=13;fontStyle=1;strokeColor=none;spacing=0;strokeWidth=0;" parent="31" vertex="1">
+          <mxGeometry x="410" width="640" height="40" as="geometry">
+            <mxRectangle width="640" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="70" width="1050" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="POST /register" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="18" vertex="1">
+          <mxGeometry width="130" height="60" as="geometry">
+            <mxRectangle width="130" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" value="нет" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="18" vertex="1">
+          <mxGeometry x="130" width="110" height="60" as="geometry">
+            <mxRectangle width="110" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="{&#xa;    &quot;username&quot;: &quot;test2&quot;,&#xa;    &quot;Password&quot;: &quot;12345&quot;&#xa;}" style="shape=partialRectangle;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;align=left;spacingLeft=6;spacingBottom=4;spacingTop=4;strokeColor=none;fillStyle=auto;" parent="18" vertex="1">
+          <mxGeometry x="240" width="170" height="60" as="geometry">
+            <mxRectangle width="170" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="Регистрация нового пользователя" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="18" vertex="1">
+          <mxGeometry x="410" width="640" height="60" as="geometry">
+            <mxRectangle width="640" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="130" width="1050" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="POST /authorize" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="22" vertex="1">
+          <mxGeometry width="130" height="60" as="geometry">
+            <mxRectangle width="130" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" value="нет" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="22" vertex="1">
+          <mxGeometry x="130" width="110" height="60" as="geometry">
+            <mxRectangle width="110" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" value="&lt;span style=&quot;&quot;&gt;{&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;username&quot;: &quot;test2&quot;,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Password&quot;: &quot;12345&quot;&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;span style=&quot;&quot;&gt;}&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;align=left;spacingLeft=6;spacingTop=4;spacingBottom=4;strokeColor=none;fillStyle=auto;" parent="22" vertex="1">
+          <mxGeometry x="240" width="170" height="60" as="geometry">
+            <mxRectangle width="170" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="Авторизация пользователя. При успешной авторизации в ответ отдается JWT токен, который клиент должен использовать при обращении к Mock-сервису" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;spacingLeft=4;strokeColor=none;fillStyle=auto;" parent="22" vertex="1">
+          <mxGeometry x="410" width="640" height="60" as="geometry">
+            <mxRectangle width="640" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="190" width="1050" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="GET /logout" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="26" vertex="1">
+          <mxGeometry width="130" height="40" as="geometry">
+            <mxRectangle width="130" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="38" value="да" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="26" vertex="1">
+          <mxGeometry x="130" width="110" height="40" as="geometry">
+            <mxRectangle width="110" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;strokeColor=none;fillStyle=auto;" parent="26" vertex="1">
+          <mxGeometry x="240" width="170" height="40" as="geometry">
+            <mxRectangle width="170" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" value="Выход пользователя из системы. Добавляет JWT токен в черный список" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="26" vertex="1">
+          <mxGeometry x="410" width="640" height="40" as="geometry">
+            <mxRectangle width="640" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="41" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="230" width="1050" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="POST /data" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="41" vertex="1">
+          <mxGeometry width="130" height="60" as="geometry">
+            <mxRectangle width="130" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43" value="да" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="41" vertex="1">
+          <mxGeometry x="130" width="110" height="60" as="geometry">
+            <mxRectangle width="110" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="44" value="{&lt;br&gt;&amp;nbsp; &amp;nbsp; &quot;name&quot;: &quot;222&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &quot;value&quot;: {&quot;a&quot;: 1}&lt;br&gt;}" style="shape=partialRectangle;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;strokeColor=none;fillStyle=auto;align=left;spacingLeft=4;html=1;" parent="41" vertex="1">
+          <mxGeometry x="240" width="170" height="60" as="geometry">
+            <mxRectangle width="170" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="45" value="Добавление новой записи в БД" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="41" vertex="1">
+          <mxGeometry x="410" width="640" height="60" as="geometry">
+            <mxRectangle width="640" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="290" width="1050" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="GET /data?id=" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="46" vertex="1">
+          <mxGeometry width="130" height="40" as="geometry">
+            <mxRectangle width="130" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="48" value="да" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="46" vertex="1">
+          <mxGeometry x="130" width="110" height="40" as="geometry">
+            <mxRectangle width="110" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;strokeColor=none;fillStyle=auto;" parent="46" vertex="1">
+          <mxGeometry x="240" width="170" height="40" as="geometry">
+            <mxRectangle width="170" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="50" value="Получение из БД записи с указанным ID" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="46" vertex="1">
+          <mxGeometry x="410" width="640" height="40" as="geometry">
+            <mxRectangle width="640" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="330" width="1050" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="PUT /data?id=" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="51" vertex="1">
+          <mxGeometry width="130" height="60" as="geometry">
+            <mxRectangle width="130" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53" value="да" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="51" vertex="1">
+          <mxGeometry x="130" width="110" height="60" as="geometry">
+            <mxRectangle width="110" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="54" value="{&#xa;    &quot;name&quot;: &quot;222&quot;,&#xa;    &quot;value&quot;: {&quot;a&quot;: 1}&#xa;}" style="shape=partialRectangle;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;strokeColor=none;fillStyle=auto;align=left;spacingLeft=4;" parent="51" vertex="1">
+          <mxGeometry x="240" width="170" height="60" as="geometry">
+            <mxRectangle width="170" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="55" value="Редактирование в БД записи с указанным ID" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="51" vertex="1">
+          <mxGeometry x="410" width="640" height="60" as="geometry">
+            <mxRectangle width="640" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="56" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="390" width="1050" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="DELETE /data?id=" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="56" vertex="1">
+          <mxGeometry width="130" height="40" as="geometry">
+            <mxRectangle width="130" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="58" value="да" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="56" vertex="1">
+          <mxGeometry x="130" width="110" height="40" as="geometry">
+            <mxRectangle width="110" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;strokeColor=none;fillStyle=auto;" parent="56" vertex="1">
+          <mxGeometry x="240" width="170" height="40" as="geometry">
+            <mxRectangle width="170" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="60" value="Удаление из БД записи с указанным ID" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="56" vertex="1">
+          <mxGeometry x="410" width="640" height="40" as="geometry">
+            <mxRectangle width="640" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontColor=#3399FF;html=0;" parent="17" vertex="1">
+          <mxGeometry y="430" width="1050" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62" value="GET /list" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="61" vertex="1">
+          <mxGeometry width="130" height="40" as="geometry">
+            <mxRectangle width="130" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="63" value="да" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="61" vertex="1">
+          <mxGeometry x="130" width="110" height="40" as="geometry">
+            <mxRectangle width="110" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=10;strokeColor=none;fillStyle=auto;" parent="61" vertex="1">
+          <mxGeometry x="240" width="170" height="40" as="geometry">
+            <mxRectangle width="170" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65" value="Получение всех записей пользователя из БД&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#FFFFFF;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Courier New;fontColor=#333333;fontSize=11;strokeColor=none;fillStyle=auto;" parent="61" vertex="1">
+          <mxGeometry x="410" width="640" height="40" as="geometry">
+            <mxRectangle width="640" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="39" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" parent="1" source="3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="90" as="sourcePoint" />
+            <mxPoint x="360" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" value="/logout" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#3399FF;spacingTop=0;spacing=4;spacingRight=7;spacingLeft=4;fontFamily=Courier New;" parent="39" vertex="1" connectable="0">
+          <mxGeometry x="0.1315" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68" value="Redis&lt;br&gt;JWT BlackList" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=1;shadow=0;labelBackgroundColor=none;sketch=0;fillStyle=auto;strokeWidth=1;fontFamily=Courier New;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="530" y="150" width="140" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

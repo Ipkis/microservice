@@ -1,0 +1,112 @@
+services:
+  nginx:
+    image: nginx:1.27.2
+    container_name: nginx_proxy
+    environment:
+      - AUTH_SERVICE_PORT=${AUTH_SERVICE_PORT}
+      - MOCK_SERVICE_PORT=${MOCK_SERVICE_PORT}
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf.template:ro
+    ports:
+      - "8080:8080"  
+    command: # подставляем переменные окружения в nginx.conf
+      /bin/bash -c "envsubst < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf && nginx -g 'daemon off;'"
+    depends_on:
+      - mock_service
+      - auth_service
+    restart: on-failure
+    networks:
+      - service_network
+    profiles:
+      - default
+
+  service_db:
+    image: postgres:13
+    container_name: service_db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${DB_HOST}
+    volumes:
+      - ./mock_service/data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - service_network
+    profiles:
+      - default
+      - db
+      - mock
+      - auth
+
+  redis:
+    image: redis:7.4.1-alpine
+    container_name: redis
+    ports:
+      - "${REDIS_PORT}:${REDIS_PORT}"
+    networks:
+      - service_network
+
+  auth_service:
+    image: golang:1.22-alpine
+    container_name: auth_service_golang
+    working_dir: /app/auth_service
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - APP_PORT=${AUTH_SERVICE_PORT}
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=redis 
+      - REDIS_PORT=${REDIS_PORT}
+    volumes:
+      - ./auth_service:/app/auth_service
+      - ./utils:/app/utils
+    command: sh -c "cd /app/auth_service && go mod download && go mod tidy && go test ./... && go build -o main . && ./main" # компиляция и запуск из auth_service
+    ports:
+      - "${AUTH_SERVICE_PORT}:${AUTH_SERVICE_PORT}"
+    depends_on:
+      - service_db
+      - redis
+    restart: on-failure
+    networks:
+      - service_network
+    profiles:
+      - default
+      - auth
+
+  mock_service:
+    image: golang:1.22-alpine
+    container_name: mock_service_golang
+    working_dir: /app/mock_service
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - APP_PORT=${MOCK_SERVICE_PORT}
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=redis 
+      - REDIS_PORT=${REDIS_PORT}
+    volumes:
+      - ./mock_service:/app/mock_service
+      - ./utils:/app/utils 
+    command: sh -c "cd /app/mock_service && go mod download && go mod tidy && go test ./... && go build -o main . && ./main" # компиляция и запуск из mock_service
+    ports:
+      - "${MOCK_SERVICE_PORT}:${MOCK_SERVICE_PORT}"
+    depends_on:
+      - service_db
+      - redis
+    restart: on-failure
+    networks:
+      - service_network
+    profiles:
+      - default
+      - mock
+
+networks:
+  service_network:
+    driver: bridge
